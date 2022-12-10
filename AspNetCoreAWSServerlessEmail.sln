@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ANCASE.Core", "src\building
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ANCASE.API", "src\services\ANCASE.API\ANCASE.API.csproj", "{E100DD51-10D6-4956-B985-420D01508082}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ANCASE.MessageBus", "src\building-blocks\ANCASE.MessageBus\ANCASE.MessageBus.csproj", "{FA427B6F-9755-40A1-93C9-C02532B6574A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ANCASE.MessageBus", "src\building-blocks\ANCASE.MessageBus\ANCASE.MessageBus.csproj", "{FA427B6F-9755-40A1-93C9-C02532B6574A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailFunction", "src\lambdas\EmailFunction\EmailFunction.csproj", "{A9237AD7-EDB1-401F-99DC-0CC5C7E30529}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{FA427B6F-9755-40A1-93C9-C02532B6574A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA427B6F-9755-40A1-93C9-C02532B6574A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA427B6F-9755-40A1-93C9-C02532B6574A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9237AD7-EDB1-401F-99DC-0CC5C7E30529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9237AD7-EDB1-401F-99DC-0CC5C7E30529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9237AD7-EDB1-401F-99DC-0CC5C7E30529}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9237AD7-EDB1-401F-99DC-0CC5C7E30529}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{AEDF9515-1B19-4194-B28A-47B3497CE152} = {DFC5674F-CCE8-4BE9-9B77-05DBC2BAD0B9}
 		{E100DD51-10D6-4956-B985-420D01508082} = {2CA7E4F7-6DA6-4DED-8CF1-8D337514024B}
 		{FA427B6F-9755-40A1-93C9-C02532B6574A} = {DFC5674F-CCE8-4BE9-9B77-05DBC2BAD0B9}
+		{A9237AD7-EDB1-401F-99DC-0CC5C7E30529} = {99CC0324-9BCE-4CD8-AC33-8B15ED95E86C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {892794CA-273C-4912-BBB6-82C243578676}
