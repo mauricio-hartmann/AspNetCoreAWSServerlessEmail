@@ -12,7 +12,7 @@
     "function-runtime" : "dotnet6",
     "function-memory-size" : 256,
     "function-timeout"     : 30,
-    "function-handler"     : "EmailFunction::EmailFunction.Function::FunctionHandler",
+    "function-handler"     : "EmailFunction::EmailFunction.Function::FunctionHandlerAsync",
     "framework"            : "net6.0",
     "function-name"        : "EmailHandler",
     "package-type"         : "Zip",
