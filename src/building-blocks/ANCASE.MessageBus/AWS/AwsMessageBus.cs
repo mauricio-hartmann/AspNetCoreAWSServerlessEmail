@@ -1,4 +1,5 @@
-﻿using Amazon.SimpleNotificationService;
+﻿using Amazon;
+using Amazon.SimpleNotificationService;
 using Amazon.SimpleNotificationService.Model;
 using ANCASE.MessageBus.Interfaces;
 using System.Text.Json;
@@ -12,7 +13,7 @@ namespace ANCASE.MessageBus.AWS
 
         public AwsMessageBus(string accessKey, string secretKey)
         {
-            _messageBus = new AmazonSimpleNotificationServiceClient(accessKey, secretKey);
+            _messageBus = new AmazonSimpleNotificationServiceClient(accessKey, secretKey, RegionEndpoint.USEast1);
         }
 
         public async Task PublicAsync(string destin, object data)

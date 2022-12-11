@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  aws-serverless-email:
+    image: realdavis/aws-serverless-email:latest
+    build:
+        context: ../src
+        dockerfile: ./services/ANCASE.API/Dockerfile
+    restart: always
+    ports:
+      - "7286:7286"            
+    environment:
+        - ASPNETCORE_ENVIRONMENT=Production
+        - ASPNETCORE_URLS=http://*:7286
